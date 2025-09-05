@@ -48,15 +48,15 @@ def encrypt_file(input_filename, output_filename, shift1, shift2):
 
 def main():
     try:
-        shift1 = int(input("Enter shift1 value: "))
-        shift2 = int(input("Enter shift2 value: "))
+        shift1 = int(input("Entre shift1 value: "))
+        shift2 = int(input("Entre shift2 value: "))
         
         if not encrypt_file("raw_text.txt", "encrypted_text.txt", shift1, shift2):
             print("Encryption failed")
             return
         
     except ValueError:
-        print("Error: Please enter valid integer values for shift1 and shift2")
+        print("Error: Please entre the valid integer values for shift1 and shift2")
     except Exception as e:
         print(f"An error occurred: {e}")
 
